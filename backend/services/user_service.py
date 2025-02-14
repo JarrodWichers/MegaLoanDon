@@ -1,5 +1,5 @@
 # backend/services/user_service.py
-from flask_security import user_datastore
+from flask_security import user_datastore, send_reset_password_email
 from models import db, User
 
 def register_user(email, password, name):

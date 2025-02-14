@@ -1,5 +1,7 @@
 import stripe
 
+stripe.api_key = ""
+
 def create_payment(amount, payment_method_id):
     try:
         intent = stripe.PaymentIntent.create(
